@@ -11,7 +11,7 @@ struct WeatherView: View {
     @StateObject var viewModel: WeatherViewModel = WeatherViewModel()
     var body: some View {
         NavigationStack {
-            VStack(spacing: Constants.Design.spaceM) {
+            VStack() {
                 TextField(Constants.Text.textField, text: $viewModel.textField)
                     .textFieldStyle(.roundedBorder)
                     .padding(.horizontal, Constants.Design.padding)

@@ -35,7 +35,6 @@ class WeatherDataParser {
     func parse(data: Data, city: CityModel) -> CityWeatherDataModel? {
         let decoder = JSONDecoder()
         guard let decodedData = try? decoder.decode(WeatherModel.self, from: data) else {
-            print("Decoding Error(parse)")
             return nil }
         let cityData = CityWeatherDataModel(city: city, weather: decodedData)
         return cityData
