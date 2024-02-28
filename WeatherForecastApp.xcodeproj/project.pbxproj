@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2F4EF5E12B72243C00BA47E0 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EF5E02B72243C00BA47E0 /* CityModel.swift */; };
-		2F4EF5E32B7228DD00BA47E0 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EF5E22B7228DD00BA47E0 /* Enum.swift */; };
+		2F4EF5E32B7228DD00BA47E0 /* CIityEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EF5E22B7228DD00BA47E0 /* CIityEnum.swift */; };
 		2F4EF5E52B72FCDF00BA47E0 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EF5E42B72FCDF00BA47E0 /* DetailView.swift */; };
 		2F4EF5E72B72FCF100BA47E0 /* CustomCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EF5E62B72FCF100BA47E0 /* CustomCellView.swift */; };
 		2F50927F2B75F5E2000F03F5 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F50927E2B75F5E2000F03F5 /* ApiManager.swift */; };
@@ -31,7 +31,7 @@
 
 /* Begin PBXFileReference section */
 		2F4EF5E02B72243C00BA47E0 /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
-		2F4EF5E22B7228DD00BA47E0 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		2F4EF5E22B7228DD00BA47E0 /* CIityEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIityEnum.swift; sourceTree = "<group>"; };
 		2F4EF5E42B72FCDF00BA47E0 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		2F4EF5E62B72FCF100BA47E0 /* CustomCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellView.swift; sourceTree = "<group>"; };
 		2F50927E2B75F5E2000F03F5 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 				2F63354F2B71E3CB00F675EB /* DailyDataModel.swift */,
 				2F6335512B71E43400F675EB /* CurrentDataModel.swift */,
 				2F4EF5E02B72243C00BA47E0 /* CityModel.swift */,
-				2F4EF5E22B7228DD00BA47E0 /* Enum.swift */,
+				2F4EF5E22B7228DD00BA47E0 /* CIityEnum.swift */,
 				2F50927E2B75F5E2000F03F5 /* ApiManager.swift */,
 				2F5092822B78A7F6000F03F5 /* Constants.swift */,
 			);
@@ -222,7 +222,7 @@
 				2F6CC11A2B735310003FC003 /* CityWeatherDataModel.swift in Sources */,
 				2F4EF5E12B72243C00BA47E0 /* CityModel.swift in Sources */,
 				2F4EF5E72B72FCF100BA47E0 /* CustomCellView.swift in Sources */,
-				2F4EF5E32B7228DD00BA47E0 /* Enum.swift in Sources */,
+				2F4EF5E32B7228DD00BA47E0 /* CIityEnum.swift in Sources */,
 				2F5D86D82B74ABFD00293437 /* DetailViewModel.swift in Sources */,
 				2F5D86DE2B74B6BA00293437 /* HourlyWeatherView.swift in Sources */,
 				2F5D86DA2B74AF7A00293437 /* BackgroundView.swift in Sources */,

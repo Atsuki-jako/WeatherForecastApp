@@ -25,6 +25,7 @@ struct WeatherView: View {
                             
                             NavigationLink {
                                 DetailView(viewModel: DetailViewModel(model: city))
+                                    .navigationBarBackButtonHidden()
                             }label: {
                                 
                             }

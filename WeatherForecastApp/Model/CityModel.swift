@@ -18,8 +18,8 @@ struct CityModel: Codable, Identifiable, Hashable {
         case name, latitude, longitude
         case timeZone = "time_zone"
     }
-    
 }
+
 let cityData = [
     CityModel(name: City.vancouver.rawValue, latitude: City.vancouver.latitude, longitude: City.vancouver.longitude, timeZone: City.vancouver.timeZone),
     CityModel(name: City.newYork.rawValue, latitude: City.newYork.latitude, longitude: City.newYork.longitude, timeZone: City.newYork.timeZone),

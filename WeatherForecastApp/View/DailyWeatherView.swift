@@ -23,7 +23,7 @@ struct DailyWeatherView: View {
                     let currentDate = cityWeatherData.weather.daily.time[0]
                     let formattedDate = cityWeatherData.formattedTimeForDailyView(value: cityWeatherData.weather.daily.time[daily])
                     Text("\(formattedDate == cityWeatherData.formattedTimeForDailyView(value: currentDate) ? "Today" : formattedDate)")
-                        .font(.system(size: Constants.Font.fontM, weight: .regular, design: .default))
+                        .font(.system(size: Constants.Font.fontM, weight: .bold, design: .default))
                         .foregroundColor(Constants.Colors.fontColor)
                         .bold()
                     Spacer()
@@ -32,28 +32,27 @@ struct DailyWeatherView: View {
                         Image(systemName: "\(cityWeatherData.weather.weatherIconByCode(code: cityWeatherData.weather.daily.weatherCode[daily]))")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 29, height: 29)
+                            .frame(width: Constants.Frame.widthXS, height: Constants.Frame.heightXS)
                             .symbolRenderingMode(.multicolor)
                         Text("\(cityWeatherData.formattedProbabilityForDailyView(value: cityWeatherData.weather.daily.precipitationProbabilityMax[daily]))%")
                             .opacity(cityWeatherData.weather.daily.weatherCode[daily] > 50 && cityWeatherData.formattedProbabilityForDailyView(value: cityWeatherData.weather.daily.precipitationProbabilityMax[daily]) > 0 ? 1 : 0)
                             .foregroundColor(Constants.Colors.fontColor)
-                            
+                            .font(.system(size: Constants.Font.fontS, weight: .bold, design: .rounded))
                     }
                     Spacer()
                     Group {
                         Text("H: \(Int(cityWeatherData.weather.daily.temperature2MMax[daily]))°")
                         Text("L: \(Int(cityWeatherData.weather.daily.temperature2MMin[daily]))°")
                     }
-                    .font(.system(size: Constants.Font.fontM, weight: .regular, design: .default))
+                    .font(.system(size: Constants.Font.fontM, weight: .bold, design: .default))
                     .foregroundColor(Constants.Colors.fontColor)
                     .bold()
-                }
-                
+                } 
             }
         }
         .padding()
         .frame(height: Constants.Frame.heightXL)
-        .background(Color(uiColor: .systemBlue).opacity(Constants.Design.opacityM))
+        .background(Color(Constants.Colors.bgColor).opacity(Constants.Design.opacityM))
         .cornerRadius(Constants.Design.cornerRadius)
         .padding() 
     }

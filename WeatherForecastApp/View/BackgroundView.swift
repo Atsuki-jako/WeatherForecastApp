@@ -15,6 +15,7 @@ struct BackgroundView: View {
                 .resizable()
                 .scaledToFill()
                 .opacity(Constants.Design.opacityL)
+                //.opacity(viewModel.model.weather.imageByCode(code: viewModel.model.weather.current.weatherCode) == "Snow" ? Constants.Design.opacityM : Constants.Design.opacityL)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .ignoresSafeArea()
