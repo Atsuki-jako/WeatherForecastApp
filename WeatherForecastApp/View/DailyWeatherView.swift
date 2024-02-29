@@ -37,7 +37,7 @@ struct DailyWeatherView: View {
                         Text("\(cityWeatherData.formattedProbabilityForDailyView(value: cityWeatherData.weather.daily.precipitationProbabilityMax[daily]))%")
                             .opacity(cityWeatherData.weather.daily.weatherCode[daily] > 50 && cityWeatherData.formattedProbabilityForDailyView(value: cityWeatherData.weather.daily.precipitationProbabilityMax[daily]) > 0 ? 1 : 0)
                             .foregroundColor(Constants.Colors.fontColor)
-                            .font(.system(size: Constants.Font.fontS, weight: .bold, design: .rounded))
+                            .font(.system(size: Constants.Font.fontXS, weight: .bold, design: .rounded))
                     }
                     Spacer()
                     Group {

@@ -14,6 +14,7 @@ struct Constants {
     struct Colors {
         static let fontColor: Color = .white
         static let bgColor: Color = .secondary
+        static let bBColor: Color = .blue
     }
     
     struct Text {
@@ -21,10 +22,12 @@ struct Constants {
         static let hourly: String = "HOURLY FORECAST"
         static let daily: String = "DAILY FORECAST"
         static let textField: String = "Enter a city name"
+        static let backButton: String = "   ＜ Back "
     }
     
     struct Font {
-        static let fontS: CGFloat = 17
+        static let fontXS: CGFloat = 17
+        static let fontS: CGFloat = 23
         static let fontM: CGFloat = 27
         static let fontL: CGFloat = 30
         static let fontXL: CGFloat = 50

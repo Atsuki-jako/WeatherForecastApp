@@ -15,9 +15,9 @@ struct CustomCellView: View {
                 Text(cityWeatherData.city.name)
                     .font(.system(size: Constants.Font.fontL, weight: .semibold, design: .default))
                 Text("\(cityWeatherData.formattedTimeForWeatherView(value: cityWeatherData.weather.current.time))")
-                    .font(.system(size: Constants.Font.fontS, weight: .regular, design: .default))
+                    .font(.system(size: Constants.Font.fontXS, weight: .regular, design: .default))
                 Text("\(cityWeatherData.weather.weatherInterPretation(code: cityWeatherData.weather.current.weatherCode))")
-                    .font(.system(size: Constants.Font.fontS, weight: .regular, design: .default))
+                    .font(.system(size: Constants.Font.fontXS, weight: .regular, design: .default))
                     .lineLimit(1)
             }
             Spacer()
@@ -29,7 +29,7 @@ struct CustomCellView: View {
                     Text("H: \(Int(cityWeatherData.weather.daily.temperature2MMax[0]))°")
                     Text("L: \(Int(cityWeatherData.weather.daily.temperature2MMin[0]))°")
                 }
-                .font(.system(size: Constants.Font.fontS, weight: .regular, design: .default))
+                .font(.system(size: Constants.Font.fontXS, weight: .regular, design: .default))
             }
         }
         .padding(.horizontal, Constants.Design.padding)

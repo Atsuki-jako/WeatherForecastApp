@@ -40,7 +40,7 @@ struct HourlyWeatherView: View {
                                 Text("\(cityWeatherData.formattedProbabilityForDailyView(value: cityWeatherData.weather.hourly.precipitationProbability[hourly]))%")
                                     .opacity(cityWeatherData.weather.hourly.weatherCode[hourly] > 50 &&  cityWeatherData.formattedProbabilityForDailyView(value: cityWeatherData.weather.hourly.precipitationProbability[hourly]) > 0 ? 1 : 0)
                                     .foregroundColor(Constants.Colors.fontColor)
-                                    .font(.system(size: Constants.Font.fontS, weight: .bold, design: .rounded))
+                                    .font(.system(size: Constants.Font.fontXS, weight: .bold, design: .rounded))
                                 Text("\(Int(cityWeatherData.weather.hourly.temperature2M[hourly]))°")
                                     .font(.system(size: Constants.Font.fontM, weight: .bold, design: .default))
                                     .foregroundColor(Constants.Colors.fontColor)

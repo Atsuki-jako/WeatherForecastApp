@@ -16,13 +16,13 @@ struct DetailView: View {
                 Button {
                     dismiss()
                 }label: {
-                    Text("   ＜ Back ")
-                        .font(.system(size: 20, weight: .semibold, design: .default))
-                        .foregroundColor(.blue)
+                    Text(Constants.Text.backButton)
+                        .font(.system(size: Constants.Font.fontS, weight: .semibold, design: .default))
+                        .foregroundColor(Constants.Colors.bBColor)
                 }
                 Spacer()
             }
-            Spacer().frame(height: Constants.Frame.heightS)
+            Spacer().frame(height: Constants.Frame.heightXS)
             ScrollView(.vertical, showsIndicators: false) {
                 VStack {
                     VStack(alignment: .center) {
